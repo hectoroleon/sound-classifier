@@ -29,25 +29,13 @@
 
 ## 📁 Project Structure
 
-sound-classifier/
-│
-├── data/                      # ESC-50 audio & metadata
-├── models/                    # Trained models (ConvNeXt, etc.)
-├── notebooks/                 # Jupyter notebooks by phase
-├── src/                       # Core Python modules
-│   ├── dataset.py             # ESC50Dataset + preprocessing
-│   ├── model.py               # Custom CNN
-│   ├── model_transfer.py      # ResNet18
-│   ├── model_convnext.py      # ConvNeXt-Tiny
-│   ├── train.py               # Training & validation functions
-│   ├── run_training.py        # Baseline CNN training
-│   ├── run_resnet_training.py # ResNet training script
-│   ├── run_convnext_training.py # ConvNeXt training script
-│   └── crossval_convnext.py   # 5-fold cross-validation
-│
-├── streamlit_app.py           # Streamlit app for real-time prediction
-├── requirements.txt           # Dependencies
-└── README.md                  # Project documentation (this file)
+- `data/` – ESC-50 dataset (download from Google Drive)
+- `models/` – Trained models (.pth files, also in Drive)
+- `notebooks/` – Project stages: data prep, training, evaluation, cross-validation
+- `src/` – Python modules: dataset, models, training scripts
+- `streamlit_app.py` – Streamlit app for real-time prediction
+- `requirements.txt` – All project dependencies
+- `README.md` – Project documentation
 
 ---
 
